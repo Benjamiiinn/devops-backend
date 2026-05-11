@@ -1,6 +1,6 @@
 services:
   backend:
-    image: tdwot1004/innovatech_backend:latest
+    image: tdwot1004/innovatech-backend:latest
     container_name: innovatech_backend
     restart: always
     environment:
