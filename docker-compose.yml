@@ -1,11 +1,11 @@
 services:
   backend:
-    build: .
+    image: tdwot1004/innovatech_backend:latest
     container_name: innovatech_backend
     restart: always
     environment:
       PORT: 3001
-      DB_HOST: ${DB_HOST:-host.docker.internal}
+      DB_HOST: 10.0.9.172
       DB_PORT: 3306
       DB_NAME: innovatech_ops
       DB_USER: app_user
