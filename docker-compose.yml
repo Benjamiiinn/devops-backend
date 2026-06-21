@@ -1,0 +1,15 @@
+services:
+  backend:
+    image: tdwot1004/innovatech-backend:latest
+    container_name: innovatech_backend
+    restart: always
+    environment:
+      PORT: 3001
+      DB_HOST: 10.0.9.172
+      DB_PORT: 3306
+      DB_NAME: innovatech_ops
+      DB_USER: app_user
+      DB_PASSWORD: app_secret
+      CORS_ORIGIN: "*"
+    ports:
+      - "3001:3001"
